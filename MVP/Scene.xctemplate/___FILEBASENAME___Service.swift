@@ -14,9 +14,9 @@ protocol ___VARIABLE_sceneName___ServiceLogic {
 
 class ___VARIABLE_sceneName___Service: ___VARIABLE_sceneName___ServiceLogic {
     
-    var provider: MoyaProvider<<#NetworkRequest#>>
+    var provider: MoyaProvider<<#NetworkRequests#>>
     
-    init(provider: MoyaProvider<<#NetworkRequest#>>) {
+    init(provider: MoyaProvider<<#NetworkRequests#>>) {
         self.provider = provider
     }
     

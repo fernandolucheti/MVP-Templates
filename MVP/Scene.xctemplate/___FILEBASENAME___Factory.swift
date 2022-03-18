@@ -11,7 +11,7 @@ import Moya
 
 final class ___VARIABLE_sceneName___Factory {
     static func createViewController() -> UIViewController {
-        let provider = MoyaProvider<<#NetworkRequest#>>()
+        let provider = MoyaProvider<<#NetworkRequests#>>()
         let service = ___VARIABLE_sceneName___Service(provider: provider)
         let presenter = ___VARIABLE_sceneName___Presenter(service: service)
         let viewController = ___VARIABLE_sceneName___ViewController(presenter: presenter)
