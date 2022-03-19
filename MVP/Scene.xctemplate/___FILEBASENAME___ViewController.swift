@@ -16,7 +16,7 @@ class ___VARIABLE_sceneName___ViewController: UIViewController {
     
     init(presenter: ___VARIABLE_sceneName___Presenter) {
         self.presenter = presenter
-        super.init()
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
