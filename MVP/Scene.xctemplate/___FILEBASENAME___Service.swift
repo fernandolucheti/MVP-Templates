@@ -14,14 +14,14 @@ protocol ___VARIABLE_sceneName___ServiceLogic {
 
 class ___VARIABLE_sceneName___Service: ___VARIABLE_sceneName___ServiceLogic {
     
-    var provider: MoyaProvider<<#NetworkRequests#>>
+    var provider: MoyaProvider<<#TargetType#>>
     
-    init(provider: MoyaProvider<<#NetworkRequests#>>) {
+    init(provider: MoyaProvider<<#TargetType#>>) {
         self.provider = provider
     }
     
     func fetch(request: ___VARIABLE_sceneName___Models.Request, completion: @escaping (Result<___VARIABLE_sceneName___Models.Response, ___VARIABLE_sceneName___Models.ErrorModel>) -> Void) {
-        provider.request(<#T##NetworkRequest#>) { result in
+        provider.request(<#TargetType#>) { result in
             switch result {
             case.success(let response):
                 do {
