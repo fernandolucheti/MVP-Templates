@@ -9,7 +9,7 @@
 import Moya
 
 protocol ___VARIABLE_sceneName___ServiceLogic {
-    func fetch(request: ___VARIABLE_sceneName___Models.Request, completion: @escaping (Result<___VARIABLE_sceneName___Models.Response, ___VARIABLE_sceneName___Models.ErrorModel>) -> Void)
+    func fetch(completion: @escaping (Result<___VARIABLE_sceneName___Models.Response, ___VARIABLE_sceneName___Models.ErrorModel>) -> Void)
 }
 
 class ___VARIABLE_sceneName___Service: ___VARIABLE_sceneName___ServiceLogic {
@@ -20,7 +20,7 @@ class ___VARIABLE_sceneName___Service: ___VARIABLE_sceneName___ServiceLogic {
         self.provider = provider
     }
     
-    func fetch(request: ___VARIABLE_sceneName___Models.Request, completion: @escaping (Result<___VARIABLE_sceneName___Models.Response, ___VARIABLE_sceneName___Models.ErrorModel>) -> Void) {
+    func fetch(completion: @escaping (Result<___VARIABLE_sceneName___Models.Response, ___VARIABLE_sceneName___Models.ErrorModel>) -> Void) {
         provider.request(<#TargetType#>) { result in
             switch result {
             case.success(let response):

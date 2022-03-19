@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ___VARIABLE_sceneName___PresenterDelegate {
+protocol ___VARIABLE_sceneName___PresenterDelegate : AnyObject {
     func presentSuccess(viewModel: ___VARIABLE_sceneName___Models.ViewModel)
     func presentError(_ error: ___VARIABLE_sceneName___Models.ErrorModel)
 }
